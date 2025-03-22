@@ -69,7 +69,6 @@ class Camputer:
 
 class Display:
     def __init__(self, *agrs, **kaywards):
-        super().__init__(*agrs, **kaywsrds):
 
     print("i display the image on the screen...")
 
