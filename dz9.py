@@ -1,12 +1,12 @@
 import logging
 import datetime
 
-# Завдання 1
+
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', datefmt='%Y-%m-%d')
 current_date = datetime.date.today().strftime('%Y-%m-%d')
 logging.info(f"Поточна дата: {current_date}")
 
-# Завдання 2
+
 logging.basicConfig(level=logging.ERROR, format='%(asctime)s - %(levelname)s - %(message)s')
 def cause_error():
     try:
@@ -17,7 +17,7 @@ def cause_error():
         return None
 cause_error()
 
-# Завдання 3
+
 def login(username, password):
     correct_username = "user123"
     correct_password = "password456"
@@ -34,7 +34,7 @@ try:
 except AssertionError as e:
     print(e)
 
-# Завдання 4
+
 def check_age(age):
     assert age >= 18, "Вам має бути 18 років або більше"
     print("Ви можете використовувати цей сервіс")
@@ -45,7 +45,7 @@ try:
 except AssertionError as e:
     print(e)
 
-# Завдання 5
+
 def process_list(input_list):
     assert len(input_list) >= 3, "Список повинен містити принаймні 3 елементи"
     print(f"Список містить {len(input_list)} елементів")
